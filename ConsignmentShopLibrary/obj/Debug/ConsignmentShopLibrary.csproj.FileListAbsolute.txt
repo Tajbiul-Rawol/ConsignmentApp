@@ -1,0 +1,6 @@
+D:\WindowsApp\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.dll
+D:\WindowsApp\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.pdb
+D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.CoreCompileInputs.cache
+D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.dll
+D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.pdb
+D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.AssemblyReference.cache

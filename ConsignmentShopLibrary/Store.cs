@@ -11,5 +11,15 @@ namespace ConsignmentShopLibrary
         public string Name { get; set; }
         public List<Vendor> Vendors { get; set; }
         public List<Item> Items { get; set; }
+
+
+        public Store()
+        {
+            //create list of vendors and items otherwise will show null reference
+            // when adding items into the store
+            Vendors = new List<Vendor>();
+            Items = new List<Item>();
+        }
+
     }
 }

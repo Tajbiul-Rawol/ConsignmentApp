@@ -34,7 +34,7 @@ namespace ConsignMentShopUI
             this.itemsListBoxLabel = new System.Windows.Forms.Label();
             this.addToCart = new System.Windows.Forms.Button();
             this.shoppingCartListBoxLabel = new System.Windows.Forms.Label();
-            this.shippingCartListBox = new System.Windows.Forms.ListBox();
+            this.shoppingCartListBox = new System.Windows.Forms.ListBox();
             this.makePurchase = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,7 +56,6 @@ namespace ConsignMentShopUI
             this.itemsListBox.Name = "itemsListBox";
             this.itemsListBox.Size = new System.Drawing.Size(252, 224);
             this.itemsListBox.TabIndex = 1;
-
             // 
             // itemsListBoxLabel
             // 
@@ -76,6 +75,7 @@ namespace ConsignMentShopUI
             this.addToCart.TabIndex = 3;
             this.addToCart.Text = "Add To Cart ->";
             this.addToCart.UseVisualStyleBackColor = true;
+            this.addToCart.Click += new System.EventHandler(this.addToCart_Click);
             // 
             // shoppingCartListBoxLabel
             // 
@@ -87,14 +87,14 @@ namespace ConsignMentShopUI
             this.shoppingCartListBoxLabel.TabIndex = 5;
             this.shoppingCartListBoxLabel.Text = "Shopping Cart";
             // 
-            // shippingCartListBox
+            // shoppingCartListBox
             // 
-            this.shippingCartListBox.FormattingEnabled = true;
-            this.shippingCartListBox.ItemHeight = 20;
-            this.shippingCartListBox.Location = new System.Drawing.Point(593, 118);
-            this.shippingCartListBox.Name = "shippingCartListBox";
-            this.shippingCartListBox.Size = new System.Drawing.Size(252, 224);
-            this.shippingCartListBox.TabIndex = 4;
+            this.shoppingCartListBox.FormattingEnabled = true;
+            this.shoppingCartListBox.ItemHeight = 20;
+            this.shoppingCartListBox.Location = new System.Drawing.Point(593, 118);
+            this.shoppingCartListBox.Name = "shoppingCartListBox";
+            this.shoppingCartListBox.Size = new System.Drawing.Size(252, 224);
+            this.shoppingCartListBox.TabIndex = 4;
             // 
             // makePurchase
             // 
@@ -104,15 +104,16 @@ namespace ConsignMentShopUI
             this.makePurchase.TabIndex = 6;
             this.makePurchase.Text = "Purchase";
             this.makePurchase.UseVisualStyleBackColor = true;
+            this.makePurchase.Click += new System.EventHandler(this.makePurchase_Click);
             // 
             // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 488);
+            this.ClientSize = new System.Drawing.Size(866, 390);
             this.Controls.Add(this.makePurchase);
             this.Controls.Add(this.shoppingCartListBoxLabel);
-            this.Controls.Add(this.shippingCartListBox);
+            this.Controls.Add(this.shoppingCartListBox);
             this.Controls.Add(this.addToCart);
             this.Controls.Add(this.itemsListBoxLabel);
             this.Controls.Add(this.itemsListBox);
@@ -133,7 +134,7 @@ namespace ConsignMentShopUI
         private System.Windows.Forms.Label itemsListBoxLabel;
         private System.Windows.Forms.Button addToCart;
         private System.Windows.Forms.Label shoppingCartListBoxLabel;
-        private System.Windows.Forms.ListBox shippingCartListBox;
+        private System.Windows.Forms.ListBox shoppingCartListBox;
         private System.Windows.Forms.Button makePurchase;
     }
 }

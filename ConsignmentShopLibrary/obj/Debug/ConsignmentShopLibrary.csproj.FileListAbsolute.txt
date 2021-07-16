@@ -4,3 +4,9 @@ D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.Cor
 D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.dll
 D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.pdb
 D:\WindowsApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.AssemblyReference.cache
+C:\Users\Tajbiul\Source\Repos\Tajbiul-Rawol\ConsignmentApp\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.dll
+C:\Users\Tajbiul\Source\Repos\Tajbiul-Rawol\ConsignmentApp\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.pdb
+C:\Users\Tajbiul\Source\Repos\Tajbiul-Rawol\ConsignmentApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csprojAssemblyReference.cache
+C:\Users\Tajbiul\Source\Repos\Tajbiul-Rawol\ConsignmentApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Tajbiul\Source\Repos\Tajbiul-Rawol\ConsignmentApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.dll
+C:\Users\Tajbiul\Source\Repos\Tajbiul-Rawol\ConsignmentApp\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.pdb

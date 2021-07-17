@@ -12,7 +12,7 @@ namespace ConsignmentShopLibrary
         public List<Vendor> Vendors { get; set; }
         public List<Item> Items { get; set; }
 
-
+        public decimal Profit { get; set; }
         public Store()
         {
             //create list of vendors and items otherwise will show null reference

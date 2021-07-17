@@ -24,6 +24,8 @@ namespace ConsignMentShopUI
         BindingSource itemsBinding = new BindingSource();
         private List<Item> shoppingCartData = new List<Item>();
         BindingSource cartBinding = new BindingSource();
+        BindingSource vendorBinding = new BindingSource();
+        
         public ConsignmentShop()
         {
             InitializeComponent();
@@ -40,6 +42,12 @@ namespace ConsignMentShopUI
 
             shoppingCartListBox.DisplayMember = "Display";
             shoppingCartListBox.ValueMember = "Display";
+
+            vendorBinding.DataSource = store.Vendors;
+            vendorListbox.DataSource = vendorBinding;
+
+            vendorListbox.DisplayMember = "Display";
+            vendorListbox.ValueMember = "Display";
         }
 
         private void SetupData()
@@ -92,17 +100,23 @@ namespace ConsignMentShopUI
             foreach (Item item in shoppingCartData)
             {
                 item.Sold = true;
+                item.Owner.PaymentDue += (decimal)item.Owner.Commission * item.Price;
+                store.Profit += (1-(decimal)item.Owner.Commission) * item.Price;
             }
-            
+
+            //show the store profit
+            storeProfitValue.Text = string.Format("${0}", store.Profit);
+
             //clear the shopping cart after the purchase
             shoppingCartData.Clear();
             
             //bind the items to the binding source gain which are not sold.
             itemsBinding.DataSource = store.Items.Where(x => x.Sold == false).ToList();
 
-            //refresh both the cartbindings and itembindings to refresh the list
+            //refresh bindings to refresh datasources to update the list
             cartBinding.ResetBindings(false);
             itemsBinding.ResetBindings(false);
+            vendorBinding.ResetBindings(false);
         }
     }
 }
